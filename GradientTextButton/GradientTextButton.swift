@@ -13,16 +13,22 @@ class GradientTextButton: UIButton {
     
     let gradientColors: [UIColor] = [#colorLiteral(red: 0.3607843137, green: 0.2078431373, blue: 0.6941176471, alpha: 1),
                                      #colorLiteral(red: 0.003921568627, green: 0.6745098039, blue: 0.7568627451, alpha: 1)]
+    let shadowView = UIView()
     
 
     override func draw(_ rect: CGRect) {
+        
+        addShadow()
         addGradientToText()
     }
     
     
     private func addGradientToText() {
         
-        let view = UIView(frame: self.bounds)
+        let view = UIView(frame: self.bounds.inset(by: UIEdgeInsets(top: 8,
+                                                                    left: 8,
+                                                                    bottom: 8,
+                                                                    right: 8)))
         let gradient = CAGradientLayer()
         gradient.colors = [gradientColors[0].cgColor, gradientColors[1].cgColor]
         gradient.startPoint = CGPoint(x: 0.0, y: 1)
@@ -41,6 +47,20 @@ class GradientTextButton: UIButton {
         view.mask = label
         self.setTitle("", for: .normal)
         self.addSubview(view)
+    }
+    
+    private func addShadow() {
+        
+        shadowView.frame = self.bounds
+        shadowView.layer.cornerRadius = 8
+        shadowView.backgroundColor = UIColor.white
+        
+        shadowView.layer.shadowOffset = .zero
+        shadowView.layer.shadowOpacity = 1
+        shadowView.layer.shadowColor = gradientColors[0].cgColor
+        shadowView.layer.shadowRadius = 2
+        
+        self.addSubview(shadowView)
     }
 
 }
