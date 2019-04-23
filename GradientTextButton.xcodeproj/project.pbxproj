@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3E6FB0226F3AAD007F4996 /* GradientTextButtonRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3E6FAF226F3AAD007F4996 /* GradientTextButtonRounded.swift */; };
 		ACC8733F226DEAB700340FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8733E226DEAB700340FB1 /* AppDelegate.swift */; };
 		ACC87341226DEAB700340FB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC87340226DEAB700340FB1 /* ViewController.swift */; };
 		ACC87344226DEAB700340FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC87342226DEAB700340FB1 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC3E6FAF226F3AAD007F4996 /* GradientTextButtonRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTextButtonRounded.swift; sourceTree = "<group>"; };
 		ACC8733B226DEAB700340FB1 /* GradientTextButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradientTextButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC8733E226DEAB700340FB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC87340226DEAB700340FB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC3E6FAE226F3A85007F4996 /* GradientTextButton */ = {
+			isa = PBXGroup;
+			children = (
+				ACC87350226DEB1E00340FB1 /* GradientTextButton.swift */,
+				AC3E6FAF226F3AAD007F4996 /* GradientTextButtonRounded.swift */,
+			);
+			path = GradientTextButton;
+			sourceTree = "<group>";
+		};
 		ACC87332226DEAB700340FB1 = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +69,7 @@
 			children = (
 				ACC8733E226DEAB700340FB1 /* AppDelegate.swift */,
 				ACC87340226DEAB700340FB1 /* ViewController.swift */,
-				ACC87350226DEB1E00340FB1 /* GradientTextButton.swift */,
+				AC3E6FAE226F3A85007F4996 /* GradientTextButton */,
 				ACC87342226DEAB700340FB1 /* Main.storyboard */,
 				ACC87345226DEAB800340FB1 /* Assets.xcassets */,
 				ACC87347226DEAB800340FB1 /* LaunchScreen.storyboard */,
@@ -140,6 +151,7 @@
 			files = (
 				ACC87341226DEAB700340FB1 /* ViewController.swift in Sources */,
 				ACC8733F226DEAB700340FB1 /* AppDelegate.swift in Sources */,
+				AC3E6FB0226F3AAD007F4996 /* GradientTextButtonRounded.swift in Sources */,
 				ACC87351226DEB1E00340FB1 /* GradientTextButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
